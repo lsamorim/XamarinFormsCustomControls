@@ -21,8 +21,6 @@ namespace XFCustomControls.iOS.CustomRenderers
                 {
                     var radius = Math.Min(button.Width, button.Height) / 2.0;
                     button.BorderRadius = (int)(radius);
-                    button.BorderWidth = 2;
-                    button.BorderColor = Color.Black;
                 };
             }
         }

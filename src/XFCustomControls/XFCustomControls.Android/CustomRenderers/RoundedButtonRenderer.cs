@@ -36,13 +36,14 @@ namespace XFCustomControls.Droid.CustomRenderers
                     else
                         _normal.SetColor(button.BackgroundColor.ToAndroid());
 
-                    _normal.SetStroke(2, Color.Black.ToAndroid());
+                    _normal.SetStroke((int)button.BorderWidth, button.BorderColor.ToAndroid());
                     _normal.SetCornerRadius(radius);
 
                     // Create a drawable for the button's pressed state
                     _pressed = new Android.Graphics.Drawables.GradientDrawable();
                     var highlight = Context.ObtainStyledAttributes(new int[] { Android.Resource.Attribute.ColorActivatedHighlight }).GetColor(0, Android.Graphics.Color.Gray);
                     _pressed.SetColor(highlight);
+                    _pressed.SetStroke((int)button.BorderWidth, button.BorderColor.ToAndroid());
                     _pressed.SetCornerRadius(radius);
 
                     // Add the drawables to a state list and assign the state list to the button
