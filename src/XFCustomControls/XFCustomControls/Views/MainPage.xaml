@@ -4,15 +4,18 @@
              xmlns:customControls="clr-namespace:XFCustomControls.CustomControls"
              x:Class="XFCustomControls.Views.MainPage"
              Title="{Binding Title}"
-             BackgroundColor="AliceBlue">
+             BackgroundColor="Green">
 
     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
         <Label Text="Simple label" HorizontalTextAlignment="Center"/>
         <customControls:ClickableLabel Text="I'm a Clickable Label" Command="{Binding ClickableLabelCommand}"/>
-        <customControls:CurvedCornersLabel Text="I'm a Curved Corners Label"
-                                           WidthRequest="250" HeightRequest="50"/>
+        <customControls:RoundedLabel Text="I'm a Rounded Label"
+                                     CurvedBorderWidth="2"
+                                     WidthRequest="250" HeightRequest="50"/>
+        <customControls:RoundedButton Text="A" BackgroundColor="Blue"
+                                      WidthRequest="80" HeightRequest="40" HorizontalOptions="Center"/>
 
-        <Button Text="Simple button" Margin="0,10,0,0"/>
+        <Button Text="Simple button" Margin="0,10,0,0" BorderRadius="50"/>
     </StackLayout>
 
 </ContentPage>
