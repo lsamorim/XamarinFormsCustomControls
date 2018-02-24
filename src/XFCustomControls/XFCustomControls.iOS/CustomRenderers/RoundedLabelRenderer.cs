@@ -47,7 +47,7 @@ namespace XFCustomControls.iOS.CustomRenderers
             this.Layer.BackgroundColor = view.CurvedBackgroundColor.ToCGColor();
             this.Layer.BorderColor = view.CurvedBorderColor.ToCGColor();
             this.Layer.BorderWidth = (float)view.CurvedBorderWidth;
-            this.Layer.CornerRadius = (float)view.CurvedCornerRadius;
+            this.Layer.CornerRadius = (float)view.CurvedCornerRadius/2f;
         }
     }
 }

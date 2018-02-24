@@ -89,6 +89,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="CustomRenderers\RoundedButtonRenderer.cs" />
+    <Compile Include="CustomRenderers\RoundedLabelRenderer.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <None Include="Entitlements.plist" />
